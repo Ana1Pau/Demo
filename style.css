@@ -1,0 +1,325 @@
+
+html {
+  width:100%;
+  height: auto;
+    }
+
+body {
+  background: linear-gradient(135deg,#16bffd, #cb3066);
+  font-family: "Century Gothic", 'Lato', sans-serif;
+}
+
+
+
+canvas {
+  position: absolute;
+  width: 100;
+  min-width: 1000px;
+  height: auto;
+}
+    
+
+a {
+  text-decoration: none;
+}
+
+
+      /* Starts NavBar*/
+       
+
+      .navbar {
+        position: relative;
+        z-index: 30;
+        left: -10px;
+         }
+      
+      
+      @media screen and (min-width: 992px) {
+      
+      .navbar{
+        min-height: 3.25rem;
+      }
+      
+      .navbar, .navbar-end {
+        align-items: stretch;
+        display: flex;
+      }
+      
+      .navbar-item {
+        display: flex;
+        align-items: center;
+      }
+      }
+      
+      
+      .navbar-menu {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+      }
+      
+      
+      .navbar-end {
+        display: flex;
+        align-items: stretch;
+        justify-content: flex-end;
+        margin-left: auto;
+      }
+      
+      
+      .buttons {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+      }
+      
+      .button:not(:last-child):not(.is-fullwidth) {
+        margin-right: 0.5rem;
+      }
+      
+      .button {
+        border: 1px solid white;
+        border-radius: 4px;
+        box-shadow: none;
+        cursor: pointer;
+        justify-content: center;
+        text-align: center;
+        text-decoration: none;
+        white-space: nowrap;
+      }
+      
+      .button {
+        padding-bottom: calc(0.5em - 1px);
+        padding-top: calc(0.5em - 1px);
+        padding-left: 1em;
+        padding-right: 1em;
+      }
+      
+      .button.is-signup {
+        background-color: transparent;
+        border-color: #ffffff !important;
+        color: #ffffff;
+      }
+      
+      .button.is-signup:hover {
+        background-color: #c81782;
+        border-color: #ffffff !important;
+        color: #ffffff;
+      }
+      
+      .button.is-login {
+        color: #ffffff;
+        border-color: #6b71ab !important;
+        background-color: #6b71ab;
+      }
+      
+      .button.is-login:hover {
+        color: #ffffff;
+        border-color: #585f9c !important;
+        background-color: #585f9c;
+      }
+            /*End NavBar*/
+      
+/*Main image*/
+
+.img-with-text {
+  text-align: justify;
+  width: -100px;
+ 
+}
+
+.img-with-text img {
+  display: block;
+  margin: 0 70;
+}
+
+/*Image*/
+
+.et-hero-tabs,
+.et-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  position: relative;
+  
+  background: transparent;
+  text-align: center;
+  padding: 0;
+}
+
+.et-slide h1 {
+color:white;
+}
+
+.et-hero-tabs h2,
+.et-slide h2 {
+  font-size: 2rem;
+  margin: 0;
+  letter-spacing: 1rem;
+  
+}
+.et-hero-tabs h3,
+.et-slide h3 {
+  font-size: 1rem;
+  letter-spacing: 0.3rem;
+  opacity: 0.6;
+  color:white;
+}
+
+.et-hero-tabs-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  box-shadow:wheat;
+  background: linear-gradient(135deg, #16bffd, #cb3066);
+  z-index: 10;
+}
+.et-hero-tabs-container--top {
+  position: fixed;
+  top: 0;
+}
+
+.et-hero-tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  color: white;
+  letter-spacing: 0.1rem;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  font-size: 0.8rem;
+}
+.et-hero-tab:hover {
+  color: white;
+  background: rgba(102, 177, 241, 0.8);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.et-hero-tab-slider {
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 6px;
+  background: #edf0f3;
+  -webkit-transition: left 0.3s ease;
+  transition: left 0.3s ease;
+}
+
+@media (min-width: 800px) {
+  
+  .et-slide h1 { /* Aqui no se por que no se homologan los colores*/
+    color:white;
+    }
+
+  .et-hero-tabs h2,
+  .et-slide h2 {
+    font-size: 3rem;
+    color:white;
+  }
+  .et-hero-tabs h3,
+  .et-slide h3 {
+    font-size: 1rem;
+    color:white;
+  }
+
+  .et-hero-tab {
+    font-size: 1rem;
+  }
+}
+
+
+/*social css*/
+
+
+
+
+.social {
+  position: absolute;
+  z-index: 10;
+  bottom: 20px;
+  right: 25px;
+  color: #fff;
+  opacity: .4;
+
+  a {
+    display: inline-block;
+    margin-left: 3px;
+  }
+
+  svg {
+    --fill: #fff;
+    width: 35px;
+    height: 35px;
+  }
+}
+
+
+
+.layout {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+
+  &:before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 90px;
+    width: 10px;
+    height: 100%;
+    border: 1px solid #fff;
+    border-top: none;
+    border-bottom: none;
+    opacity: .15;
+  }
+
+  .box {
+    position: relative;     
+    top: 150px;
+    bottom: 0;
+    left: 60px;
+    color: #fff;
+    transform-origin: 0% 10%;
+    transform: rotate(-90deg);
+    font-size: 9px;
+    line-height: 1.4;
+    text-transform: uppercase;
+    opacity: .4;
+  }
+}
