@@ -1,5 +1,5 @@
 # Demo
-A demo of an interactive website
+How to use my demo. An interactive website. :)
 #
 1.Please download the whole package .
 #
